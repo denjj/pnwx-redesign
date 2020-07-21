@@ -1,0 +1,55 @@
+#contacts .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+#contacts .button:hover{
+    -fx-text-fill: #1985a1;
+}
+
+#shopbar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+#shopbar .button:hover{
+    -fx-background-color: #1985a1;
+}
+
+#shopbutton {
+    -fx-background-color: #1985a1;
+    -fx-text-fill: white;
+}
+
+#shopbutton:hover {
+    -fx-background-color: #30323a;
+}
+
+#newitem {
+    -fx-border-style: hidden none solid none;
+}
+
+#itembox {
+
+}
+
+#itembox VBox{
+    -fx-background-color: white;
+}
+
+/*
+search
+
+contacts
+
+category
+
+shopbar
+
+shopbutton
+
+itembox
+
+
+
+0 1px 3px rgba(0,0,0,0.12),
+0 1px 2px rgba(0,0,0,0.24);
+ */

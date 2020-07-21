@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0" prefWidth="1360.0" style="-fx-background-color: white;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="90.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="500.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="355.0" minHeight="-Infinity" prefHeight="336.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="-Infinity" prefWidth="264.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="501.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="412.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="244.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT">
+               <image>
+                  <Image url="@../resources/logo_v2.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </ImageView>
+            <HBox id="search" alignment="CENTER_LEFT" prefHeight="90.0" prefWidth="512.0" GridPane.columnIndex="1">
+               <children>
+                  <MenuButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: transparent; -fx-border-color: lightgrey;" text="All Categories">
+                     <font>
+                        <Font size="14.0" />
+                     </font></MenuButton>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="365.0" promptText="All Categoeies" style="-fx-border-color: lightgrey;" text="Search by Name or Part Number">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="-37.0">
+                     <image>
+                        <Image url="@../resources/search.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <GridPane.margin>
+                  <Insets left="2.0" />
+               </GridPane.margin>
+            </HBox>
+            <HBox id="contacts" alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="2">
+               <children>
+                  <Button mnemonicParsing="false" text="ABOUT US">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="CONTACT">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="ACCOUNT">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="CART">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane gridLinesVisible="true" style="-fx-background-color: #30323a;" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="265.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #1985a1;" GridPane.columnIndex="1">
+               <children>
+                  <MenuButton contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="265.0" style="-fx-background-color: transparent;" text="Categories" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Equipment                                                          " />
+                        <MenuItem mnemonicParsing="false" text="Accessories" />
+                        <MenuItem mnemonicParsing="false" text="Supplies" />
+                        <MenuItem mnemonicParsing="false" text="Parts" />
+                     </items>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+            </HBox>
+            <HBox id="shopbar" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.columnIndex="2">
+               <children>
+                  <Button mnemonicParsing="false" text="Popular">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" text="New">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" text="Sales">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" text="Clearance">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+               </children>
+               <GridPane.margin>
+                  <Insets left="30.0" top="-1.0" />
+               </GridPane.margin>
+            </HBox>
+            <ImageView fitHeight="150.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="325.0">
+               <image>
+                  <Image url="@../resources/caret.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <GridPane.margin>
+            <Insets left="-90.0" right="-90.0" />
+         </GridPane.margin>
+      </GridPane>
+      <GridPane id="newitem" style="-fx-border-color: lightgrey;" GridPane.rowIndex="3">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="New Items" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="See All &gt;" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <ImageView fitWidth="1178.0" pickOnBounds="true" preserveRatio="true" translateY="2.0" StackPane.alignment="TOP_CENTER">
+               <image>
+                  <Image url="@../resources/scopes_v2.jpg" />
+               </image>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </ImageView>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="92.0" prefWidth="546.0" text="Pacific Northwest X-Ray" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="83.0" prefWidth="610.0" text="Your pacific-northwestern source for hundreds of X-ray and radiology accessories, supplies, and equipment." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets top="16.0" />
+                     </padding>
+                  </Label>
+                  <Button id="shopbutton" mnemonicParsing="false" prefHeight="37.0" prefWidth="110.0" text="Shop Now">
+                     <VBox.margin>
+                        <Insets top="34.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <StackPane.margin>
+                  <Insets top="79.0" />
+               </StackPane.margin>
+            </VBox>
+         </children>
+      </StackPane>
+      <GridPane id="itembox" alignment="CENTER" hgap="50.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="192.0" minHeight="0.0" prefHeight="176.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="70.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="2.0" GridPane.columnIndex="3">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/4.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Face Mask Dispenser, Single Box">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$55.00">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="2.0" GridPane.columnIndex="2">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/3.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Durable Column Carts">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$4887.00">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="2.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Radiation Apron Hangers">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$35.25">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Text>
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="2.0">
+               <children>
+                  <ImageView fitHeight="129.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/1.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" text="Portable X-Ray View Box">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$2310.00">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow color="#00000022" height="32.86" offsetY="6.0" radius="15.93" width="32.86" />
+         </effect>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="90.0" right="90.0" top="5.0" />
+   </padding>
+</GridPane>
